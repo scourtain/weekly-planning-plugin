@@ -1,0 +1,8 @@
+{
+  "name": "weekly-planning",
+  "description": "A structured weekly planning system that connects your tasks to your business goals. Pulls your calendar, scans projects, and builds a goal-aligned weekly plan.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Inspired Efficiency"
+  }
+}
