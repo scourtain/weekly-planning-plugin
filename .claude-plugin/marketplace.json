@@ -1,0 +1,13 @@
+{
+  "name": "weekly-planning",
+  "owner": {
+    "name": "Inspired Efficiency"
+  },
+  "plugins": [
+    {
+      "name": "weekly-planning",
+      "source": "./plugins/weekly-planning",
+      "description": "A structured weekly planning system that connects your tasks to your business goals."
+    }
+  ]
+}
