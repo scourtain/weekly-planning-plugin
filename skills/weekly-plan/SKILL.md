@@ -15,11 +15,9 @@ Run a structured weekly planning session that connects your week to your bigger 
 2. **Load configuration** by reading `weekly-planning-config.md` from the project root. If it doesn't exist, tell the user to run `/setup-weekly-planning` first and stop.
 
 3. **Execute the Main Weekly Planning Workflow** from the agent docs:
-   - **Phase 2: Automated Pulls** - Pull calendar, email, and project data BEFORE asking the user anything. Present a briefing of what you found.
-   - **Phase 3: Brain Dump** - Ask the user what else is on their mind. Accept freeform input.
-   - **Phase 4: Synthesize** - Merge automated pulls with brain dump. Deduplicate and categorize.
-   - **Phase 5: Priority Alignment** - Map priorities to stored goals. Challenge items with no goal connection (kindly, once, then accept their answer).
-   - **Phase 6: Weekly Brief** - Produce the structured weekly plan. Ask if it feels right. Adjust and save.
+   - **Phase 2: Automated Pulls + Brain Dump** - Pull calendar, email, and project data BEFORE asking the user anything. Present a thorough Intelligence Brief with a Connected Sources table. Then ask for a brain dump at the bottom.
+   - **Phase 3: Synthesize and Prioritize** - Merge automated pulls with brain dump. Use RICE-style evaluation to rank. Select exactly 3 top priorities. Map to goals. Challenge unaligned items kindly.
+   - **Phase 4: Weekly Brief** - Produce the structured weekly plan with Goal Status at top, Top 3 Priorities, then bolded sections for Meeting Prep, Follow-Ups, Flags & Risks, and Encouragement. Ask if it feels right. Adjust and save.
 
 4. **Follow the rules:**
    - Do automated pulls FIRST, before asking the user anything

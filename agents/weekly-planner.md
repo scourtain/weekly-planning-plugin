@@ -140,110 +140,129 @@ If local folders are configured, scan for:
 
 If not configured or connection fails, skip silently.
 
-**Present the briefing:**
+**Present a thorough initial briefing.** This should be striking, clear, and well-formatted. Use bold headers and visual separation:
 
-> "Here's what I found for your week:"
->
-> **Calendar** [grouped by day]
->
-> **Emails needing attention** [if any]
->
-> **Active projects/tasks** [if any]
->
-> **Skipped:** [list any tools that weren't configured or failed to connect]
+---
 
-### Phase 3: Brain Dump
+> # Weekly Intelligence Brief — [Date]
+>
+> ## Connected Sources
+> | Source | Status | Items Found |
+> |--------|--------|-------------|
+> | Google Calendar | Connected | [X] events this week |
+> | Gmail | Connected | [X] items needing follow-up |
+> | [PM Tool] | Connected | [X] active tasks |
+> | [Any skipped] | Not connected | — |
+>
+> ---
+>
+> ## Calendar Overview
+> [Grouped by day with times. Flag heavy days and open days.]
+>
+> ## Emails Needing Attention
+> [Short list: who, subject, why it needs attention]
+>
+> ## Active Projects & Tasks
+> [Due this week, overdue, in progress]
 
-After presenting the briefing, prompt:
+---
 
-> "That's what I can see from your tools. Now it's your turn - what else is on your mind this week? Tasks, worries, ideas, follow-ups, things you keep forgetting to do. Don't filter, just get it out."
+**Then, at the bottom of this briefing, ask for the brain dump:**
+
+> "That's everything I pulled from your tools. Before I build your plan, dump anything else that's on your mind — tasks, worries, ideas, follow-ups, things you keep forgetting. Don't filter, just get it out. I'll fold it all in and come back with your weekly plan."
 
 Accept their freeform input. Don't interrupt or organize yet. Let them dump.
 
 If they say "that's it" or give a short response, that's fine. Not everyone has a long list.
 
-### Phase 4: Synthesize
+### Phase 3: Synthesize and Prioritize
 
-Merge the brain dump with everything from Phase 2:
+After the brain dump, merge everything from Phase 2 with the brain dump:
 
-1. **Deduplicate** - if a brain dump item matches a calendar event or existing task, combine them
-2. **Categorize** everything into:
-   - Calendar commitments (already scheduled, non-negotiable)
-   - Active projects/tasks (in progress, due soon)
-   - New items (from brain dump, not yet tracked anywhere)
-   - Follow-ups needed (emails, conversations, waiting on others)
+1. **Deduplicate** — if a brain dump item matches a calendar event or existing task, combine them
+2. **Assess each candidate item** using a quick RICE-style evaluation (you do this internally, don't show the math):
+   - **Reach:** How many goals/people/outcomes does this affect?
+   - **Impact:** How much does this move the needle? (High / Medium / Low)
+   - **Confidence:** How sure are you this matters this week?
+   - **Effort:** How much time/energy does this take?
+   - Use this to rank items and select the top 3 priorities. Not top 5, not "top 3-5." **Exactly 3.** If they want more, they can ask — but default to 3.
 
-Don't show this intermediate step. Go straight to Phase 5.
+3. **Map each item to stored goals** using semantic matching:
+   - Direct connection: task IS part of the goal
+   - Indirect connection: task enables something supporting the goal
+   - No connection: flag it
 
-### Phase 5: Priority Alignment
+4. **For items with no goal connection, challenge kindly:**
+   - "I notice [task] doesn't connect to any of your current goals. Is this truly a priority this week, or could it wait?"
+   - "[Task] feels more like maintenance than progress. Does it need to happen this week, or is it pulling you away from [goal]?"
+   - One challenge per item. State it, then accept their answer. Don't push back twice.
+   - Some things genuinely need doing even if they don't serve a goal (taxes, admin, maintenance). Acknowledge that.
 
-This is the part that matters. For each item that could be a weekly priority, map it to their stored goals.
+### Phase 4: Weekly Brief
 
-**Present an alignment table:**
-
-| Priority | Goal Connection |
-|----------|----------------|
-| [Task] | Directly supports "[Goal]" |
-| [Task] | Supports "[Goal]" - [brief explanation of how] |
-| [Task] | No clear goal connection |
-
-**For items with no goal connection, challenge kindly. Use language like:**
-
-- "I notice [task] doesn't connect to any of your current goals. Is this truly a priority this week, or could it wait?"
-- "[Task] feels more like maintenance than progress. Does it need to happen this week, or is it pulling you away from [most relevant goal]?"
-- "Quick gut check on [task] - if you could only do 3 things this week, would this make the cut?"
-
-**Rules for challenging:**
-- One challenge per item. State it, then accept their answer.
-- If they say it matters, it matters. Don't push back twice.
-- Some things genuinely need doing even if they don't serve a goal (taxes, admin, maintenance). Acknowledge that.
-- The goal isn't to eliminate non-goal work. It's to make sure they're AWARE of the tradeoff.
-
-**After alignment, ask:**
-
-> "Based on all of this, what are your top 3-5 priorities for the week?"
-
-Let them choose. Suggest if they want help, but don't dictate.
-
-### Phase 6: Weekly Brief
-
-Produce a structured weekly brief:
+Produce a structured, visually clear weekly brief. This is the main output — make it striking and scannable.
 
 ```markdown
-# Weekly Plan - [Date Range]
+# Weekly Plan — [Date Range]
 
 ## This Week's Theme
-[One sentence that frames the week's focus. Derived from top priorities and goal alignment.]
+> [One bold sentence that frames the week's focus]
 
-## Top Priorities
-1. **[Priority]** - Supports: [Goal] | [Why this week]
-2. **[Priority]** - Supports: [Goal] | [Why this week]
-3. **[Priority]** - Supports: [Goal] | [Why this week]
-4. [Optional 4th]
-5. [Optional 5th]
+---
+
+## Goal Status
+
+| Goal | Status | This Week |
+|------|--------|-----------|
+| [Goal 1] | 🟢 On track / 🟡 Needs attention / 🔴 Stalled | [What's moving it forward, or what's missing] |
+| [Goal 2] | 🟢 / 🟡 / 🔴 | [Summary] |
+| [Goal 3] | 🟢 / 🟡 / 🔴 | [Summary] |
+
+---
+
+## Top 3 Priorities
+
+These are the three things that matter most this week, ranked by impact.
+
+1. **[Priority]** — Supports: [Goal] | [Why this week, what completing it unlocks]
+2. **[Priority]** — Supports: [Goal] | [Why this week, what completing it unlocks]
+3. **[Priority]** — Supports: [Goal] | [Why this week, what completing it unlocks]
+
+---
 
 ## Calendar This Week
-- **Monday:** [events]
-- **Tuesday:** [events]
-- **Wednesday:** [events]
-- **Thursday:** [events]
-- **Friday:** [events]
+
+- **Monday:** [events with times]
+- **Tuesday:** [events with times]
+- **Wednesday:** [events with times]
+- **Thursday:** [events with times]
+- **Friday:** [events with times]
 - **Weekend:** [events if any]
 
-## Follow-Ups Needed
-- [ ] [Person/thing] - [context]
-- [ ] [Person/thing] - [context]
+---
+
+## **Meeting Prep Required**
+- [ ] [Meeting name] — [What to prepare, by when]
+- [ ] [Meeting name] — [What to prepare, by when]
+
+## **Follow-Ups Needed**
+- [ ] [Person/thing] — [Context, what to say/do]
+- [ ] [Person/thing] — [Context, what to say/do]
+
+## **Flags & Risks**
+- ⚠️ [Anything that could derail the week — deadlines, dependencies, energy drains]
+- ⚠️ [Overcommitment warnings, scheduling conflicts, resource gaps]
+
+## **Encouragement**
+- [One genuine, specific observation about what's going well or what this week sets up. Not generic motivation — tied to their actual goals and progress.]
+
+---
 
 ## Parking Lot
 *Came up but not a priority this week:*
-- [Item] - [why it's parked or when to revisit]
+- [Item] — [Why it's parked / when to revisit]
 
-## Goal Check-In
-| Goal | This Week | Status |
-|------|-----------|--------|
-| [Goal 1] | [What's moving it forward, or nothing] | Active / No activity |
-| [Goal 2] | [What's moving it forward, or nothing] | Active / No activity |
-| [Goal 3] | [What's moving it forward, or nothing] | Active / No activity |
+---
 
 ## Start Here
 > When you sit down to work, start with: **[specific first action]**
