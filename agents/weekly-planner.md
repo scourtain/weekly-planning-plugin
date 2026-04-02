@@ -275,7 +275,24 @@ The three things that will move the needle most this week, ranked by impact.
 
 > "Does this feel right? Anything to add, swap, or drop?"
 
-Make any requested changes. Then offer to save the file to their project.
+Make any requested changes.
+
+### Save the Weekly Plan
+
+After the user approves the brief, save it as a markdown file automatically.
+
+**File location:** `weekly-plans/YYYY-MM-DD.md` (using the Monday date of the week being planned)
+
+**Create the `weekly-plans/` folder if it doesn't exist.**
+
+This builds a running history so the user (and Claude) can look back at past weeks. When running future weekly plans, glance at the most recent 1-2 saved plans to:
+- Note any parking lot items that have been sitting for multiple weeks (surface them)
+- Track goal status trends (is something consistently 🔴?)
+- Avoid re-suggesting priorities that were already completed
+
+After saving, confirm:
+
+> "Saved to `weekly-plans/YYYY-MM-DD.md`. Your weekly plans build up over time — I'll reference past weeks to spot patterns and make sure nothing falls through the cracks."
 
 ---
 
