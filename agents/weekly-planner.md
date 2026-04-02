@@ -144,25 +144,25 @@ If not configured or connection fails, skip silently.
 
 ---
 
-> # Weekly Intelligence Brief — [Date]
+> # 🔭 Weekly Intelligence Brief — [Date]
 >
-> ## Connected Sources
+> ## 📡 Connected Sources
 > | Source | Status | Items Found |
 > |--------|--------|-------------|
-> | Google Calendar | Connected | [X] events this week |
-> | Gmail | Connected | [X] items needing follow-up |
-> | [PM Tool] | Connected | [X] active tasks |
-> | [Any skipped] | Not connected | — |
+> | 📅 Google Calendar | ✅ Connected | [X] events this week |
+> | 📧 Gmail | ✅ Connected | [X] items needing follow-up |
+> | 📋 [PM Tool] | ✅ Connected | [X] active tasks |
+> | [Any skipped] | ⬜ Not connected | — |
 >
 > ---
 >
-> ## Calendar Overview
+> ## 📅 Your Week at a Glance
 > [Grouped by day with times. Flag heavy days and open days.]
 >
-> ## Emails Needing Attention
+> ## 📧 Inbox Items Worth Noting
 > [Short list: who, subject, why it needs attention]
 >
-> ## Active Projects & Tasks
+> ## 📋 Projects in Motion
 > [Due this week, overdue, in progress]
 
 ---
@@ -203,26 +203,26 @@ After the brain dump, merge everything from Phase 2 with the brain dump:
 Produce a structured, visually clear weekly brief. This is the main output — make it striking and scannable.
 
 ```markdown
-# Weekly Plan — [Date Range]
+# 🗓️ Weekly Plan — [Date Range]
 
-## This Week's Theme
+## 🎯 This Week's Theme
 > [One bold sentence that frames the week's focus]
 
 ---
 
-## Goal Status
+## 🧭 Where You're Headed
 
 | Goal | Status | This Week |
 |------|--------|-----------|
-| [Goal 1] | 🟢 On track / 🟡 Needs attention / 🔴 Stalled | [What's moving it forward, or what's missing] |
-| [Goal 2] | 🟢 / 🟡 / 🔴 | [Summary] |
-| [Goal 3] | 🟢 / 🟡 / 🔴 | [Summary] |
+| [Goal 1] | 🟢 On track / 🟡 Needs attention / 🔴 Stalled / ⚪ No activity | [What's moving it forward, or what's missing] |
+| [Goal 2] | 🟢 / 🟡 / 🔴 / ⚪ | [Summary] |
+| [Goal 3] | 🟢 / 🟡 / 🔴 / ⚪ | [Summary] |
 
 ---
 
-## Top 3 Priorities
+## 🔥 Top 3 Priorities
 
-These are the three things that matter most this week, ranked by impact.
+The three things that will move the needle most this week, ranked by impact.
 
 1. **[Priority]** — Supports: [Goal] | [Why this week, what completing it unlocks]
 2. **[Priority]** — Supports: [Goal] | [Why this week, what completing it unlocks]
@@ -230,7 +230,7 @@ These are the three things that matter most this week, ranked by impact.
 
 ---
 
-## Calendar This Week
+## 📅 Calendar This Week
 
 - **Monday:** [events with times]
 - **Tuesday:** [events with times]
@@ -241,30 +241,30 @@ These are the three things that matter most this week, ranked by impact.
 
 ---
 
-## **Meeting Prep Required**
+## 📝 **Meeting Prep Required**
 - [ ] [Meeting name] — [What to prepare, by when]
 - [ ] [Meeting name] — [What to prepare, by when]
 
-## **Follow-Ups Needed**
+## 🔁 **Follow-Ups Needed**
 - [ ] [Person/thing] — [Context, what to say/do]
 - [ ] [Person/thing] — [Context, what to say/do]
 
-## **Flags & Risks**
-- ⚠️ [Anything that could derail the week — deadlines, dependencies, energy drains]
-- ⚠️ [Overcommitment warnings, scheduling conflicts, resource gaps]
+## 🚩 **Flags & Risks**
+- [Anything that could derail the week — deadlines, dependencies, energy drains]
+- [Overcommitment warnings, scheduling conflicts, resource gaps]
 
-## **Encouragement**
-- [One genuine, specific observation about what's going well or what this week sets up. Not generic motivation — tied to their actual goals and progress.]
+## 💪 **Fuel for the Week**
+- [One genuine, specific observation about what's going well or what this week sets up. Not generic motivation — tied to their actual goals and progress. Acknowledge momentum. Name what they're building toward.]
 
 ---
 
-## Parking Lot
+## 🅿️ Parking Lot
 *Came up but not a priority this week:*
 - [Item] — [Why it's parked / when to revisit]
 
 ---
 
-## Start Here
+## ▶️ Start Here
 > When you sit down to work, start with: **[specific first action]**
 
 ---
